@@ -1,0 +1,42 @@
+Настройка Git
+git config -global user.name "[name]"
+git config --global user.email "[email address]"
+git config --global color.ui auto
+git config --global core.editor "[program]"
+
+git status - текущий статус
+git add <file> - добавить файл к будущему коммиту
+git commit - записать коммит
+git commit -m 'commit message' - записать коммит с сообщением
+
+git log - просмотр истории коммитов
+git reflog - просмотр истории действий
+git reset - сброс текущего состояния истории
+git revert - отмена последствий коммита
+git restore - сброс состояния файла на указанное
+
+git branch - управление ветками
+git checkout - переключение веток
+
+git fetch - подгрузить обновления из репозитория
+git pull - скачать последние обновления ветки
+git push - загрузить в репозиторий локальные изменения
+
+git merge - слияние ветки
+git rebase - смена базовой ветки
+
+git tag - создание тега
+git push --tags - загрузка тегов
+git push --delete origin - удаление тегов
+
+git stash - выгрузить изменения в stash
+git stash push <file> - добавить файл в stash
+git stash pop - применить изменения из stash
+git stash list - посмотреть список stash
+
+git merge <branch> --squash - перенос изменений через squash
+git rebase -i HEAD~X - склеить Х коммитов
+
+git cherry-pick <commit> - перенести коммит на текущую ветку
+git cherry-pick <branch> - перенести последний коммит ветки
+git cherry-pick…<branch> - перенести все коммиты с ветки
