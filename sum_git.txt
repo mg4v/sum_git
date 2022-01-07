@@ -1,3 +1,6 @@
+git --version
+sudo apt install git
+
 Настройка Git
 git config -global user.name "[name]"
 git config --global user.email "[email address]"
